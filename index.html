@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Devcube</title>
+</head>
+<body id="page-top">
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg  fixed-top">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <img alt="Brand" src="./icon/logo-04.png" width="25%">
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active js-scroll-trigger" aria-current="page" href="#about">Sobre nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Equipo</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#produc" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">AgroHub</a></li>
+                  <li><a class="dropdown-item" href="#">LoggApp</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#note">Notas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav> 
+    <div class="container slideImg ">
+      <div class="d-flex justify-content-center">
+        <img src="./icon/slide02.png" alt="First slide" width="80%">
+      </div>
+    </div>
+    
+   <!--  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./icon/slide02.png" alt="First slide" width="60px">
+          </div>
+        </div>
+    </div> -->
+
+  
+    <!-- NOSOTROS -->
+    <section id="about">
+        <div class=" contentNosotros">
+            <div class=" bckColor">
+                <div class="about-heading-content">
+                    <div class="row">
+                      <div class="col-xl-9 col-lg-10 mx-auto">
+                        <div class="bg-faded rounded p-5">
+                          <h2 class="section-heading mb-4">
+                            <span class="section-heading-upper">Sobre</span>
+                            <span class="section-heading-lower">DevCube</span>
+                          </h2>
+                          <p>DevCube comienza en Marcos Juárez a partir de la idea de renovar los procesos y de hacer mas eficiente el funcionamiento de empresas.
+                            Somos un equipo de profesionales de distintas areas que creemos en este proyecto y que nos apasiona lo que hacemos.
+                            <p class="mb-0"> Estamos convencidos que <em>las nuevas tecnologia y la informacion</em> son las claves del desarrollo de una empresa por eso queremos facilitar la incorporacion de herramientas que lleven a cada organizacion a lograr su mayor potencial y convertirse en una empresa del siglo 21.</p>
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="./icon/nosotros.jpg" alt="nosotros" width="45%">
+            </div>
+        </div>
+    </section>
+    <!--- equipo -->
+    <section id="team">
+      <div class="titleTeam">
+        <p> Nuestro <strong>Equipo</strong> </p>
+        <p class="subtitle">Lo que hacemos, nos hace feliz. </p>
+      </div>
+      <div class="container cTeam">
+        <div class="row people d-flex justify-content-center">
+          <div class="col-lg-3 item">
+              <div class="box" style="background-image:url(./icon/diego.png)">
+                  <div class="cover">
+                      <h3 class="name">Diego Poncee</h3>
+                      <p class="title">CEO</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 item">
+            <div class="box" style="background-image:url(./icon/mari.png)">
+                <div class="cover02">
+                    <h3 class="name02">Marianela Bonio</h3>
+                    <p class="title">CDO</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-3 item">
+            <div class="box" style="background-image:url(./icon/carlos.png)">
+                <div class="cover">
+                    <h3 class="name">Carlos Massari</h3>
+                    <p class="title">CFO</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-3 item">
+            <div class="box" style="background-image:url(./icon/noe.png)">
+                <div class="cover02">
+                    <h3 class="name02">Noelia Cravero</h3>
+                    <p class="title">RRHH</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="row people d-flex justify-content-center">
+
+          <div class="col-lg-3 item">
+            <div class="box" style="background-image:url(./icon/fabi.png);background-position: center;">
+                <div class="cover02">
+                    <h3 class="name02">Fabiana Sandone</h3>
+                    <p class="title">Diseñadora Gráfica</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-3 item">
+            <div class="box" style="background-image:url(./icon/pablo.png)">
+                <div class="cover">
+                    <h3 class="name">Pablo Lavisse</h3>
+                    <p class="title">Analista de Sistema</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-lg-3 item">
+            <div class="box" style="background-image:url(./icon/cande.png);background-position: center;">
+                <div class="cover02">
+                    <h3 class="name02">Candelaria Ferrari</h3>
+                    <p class="title">Desarrolladora Frontend</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-lg-3 item">
+            <div class="box" style="background-image:url(./icon/jose.png)">
+                <div class="cover">
+                    <h3 class="name">Jose Rivero</h3>
+                    <p class="title">Ventas</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+    <!-- CONTACTO -->
+    <section id="contact">
+      <div class="parte container-fluid">
+        Se parte de la <strong>comunidad devcube</strong>
+      </div>
+      <div class="contentContact">
+        <div class="container">
+          <div class="d-flex flex-lg-row align-items-center">
+            <div class="p-2 contentEscribinos">
+              <div class="escribinos"> 
+                ESCRIBINOS
+              </div>
+              <div class="punto">
+                .
+              </div>
+            </div>
+            <div class="ml-auto p-2">
+              <form>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y apellido">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Teléfono">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje"></textarea>
+                </div>
+                <button type="button" class="btn btn-lg btn-block">ENVIAR</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="row container">
+          <div class="col-lg-4 derechos">
+            <div class="uno">©DevCube, 2021</div>
+            <div class="dos">Todos los derechos reservados</div>
+          </div>
+          <div class="col-lg-4 mail">
+            info@devcube.com
+          </div>
+          <div class="col-lg-4 redes">
+            <div class="redes">
+              <a href="https://www.facebook.com/Devcube-sas-102557478343961" target="_blank">
+                <img src="./icon/facebook.svg" alt="facebook">
+              </a>
+            </div>
+            <div class="redes">
+              <a href="https://www.instagram.com/devcubesas/" target="_blank">
+                <img src="./icon/instagram.svg" alt="insta">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+
+
+
+    </body>
+</html>

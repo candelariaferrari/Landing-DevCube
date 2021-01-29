@@ -1,0 +1,400 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+$violetaClaro: #dad7fd;
+$violeta: #8f84f8;
+$violetaOscuro: #6d5fcd;
+$verde: #00fdb5;
+$negro: #1e2235;
+$blanco: #ffffff;
+
+::-webkit-scrollbar {
+  width: 8px;     /* Tamaño del scroll en vertical */
+  height: 8px;    /* Tamaño del scroll en horizontal */
+  display: none;  /* Ocultar scroll */
+}
+.navbar {
+    background-color: $blanco;
+    color: $blanco;
+    -webkit-box-shadow: 3px 5px 12px -6px rgba(0, 0, 0, 0.466); 
+    box-shadow: 3px 5px 12px -6px rgba(0, 0, 0, 0.466);
+    
+   }
+.navbar-collapse {
+    display: flex !important; 
+    justify-content: flex-end;
+    flex-basis: auto;
+  }
+
+.nav-item {
+    margin-left: 0px!important;
+    a{
+      color: $negro;
+      border-bottom: 2px solid $blanco;
+      font-size: 15px;
+    }
+    a:hover{
+        color: $violetaOscuro;
+        border-bottom: 2px solid $verde;
+    }
+  }
+  ul.dropdown-menu.show{
+    background-color: $violeta;
+    min-width: 5rem;
+  }
+  .dropdown-item{
+      color: $violeta;
+  }
+.dropdown-item:focus, .dropdown-item:hover {
+    color: $verde;
+    background-color: $violeta;
+}
+
+/* ---- slide ----*/
+.slideImg{
+    margin-top: 50px !important;
+    height: 60vh;
+    .d-block.w-100{
+      width: 60%;
+    }
+}
+/* about */ 
+.bg-primary {
+    background-color: $violeta !important;
+    width: 100vw;
+    height: 70vh;
+}
+.text-center {
+    text-align: center!important;
+    margin-top: 100px;
+}
+
+strong {
+    color: $verde;
+}
+.text-white-50 {
+    color: $blanco!important;
+}
+
+/* Nosotros */ 
+.contentNosotros{
+    position: relative;
+}
+.bckColor{
+    background-color: $violetaOscuro;
+    width: 50vw;
+    height: 90vh;
+
+}
+.img-fluid.about-heading-img{
+    position: absolute;
+    margin-top: -27rem;
+    margin-left: 35rem;
+}
+
+.page-section {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+.rounded {
+    border-radius: 0.5rem!important;
+}
+.about-heading-img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem!important;
+    text-align: center;
+}
+.section-heading-upper{
+    color: $verde;
+    text-align: center;
+    width: 100%;
+}
+.section-heading-lower{
+    color: $blanco;
+}
+.about-heading .about-heading-img {
+    position: relative;
+    z-index: 0;
+  }
+.about-heading .about-heading-content {
+    margin-top: -10rem;
+    position: relative;
+    z-index: 1;
+  }
+  .mb-0{
+    em{
+        color: $verde;
+    }
+  }
+  
+/* equipo */
+#team {
+  margin-top: 30px;
+  .titleTeam {
+    text-align: center;
+    color: $negro;
+    height: 15vh;
+    padding-top: 4vh;
+    font-size: 30px;
+    display: block;
+    strong{
+      color: $negro;
+      font-weight: 400;
+    }
+    .subtitle{
+      display: block;
+      color: $violeta;
+      font-size: 20px;
+      margin-top: -20px;
+    }
+  }
+  .cTeam{
+    margin-top: 70px;
+    margin-bottom: 80px;
+  }
+}
+.people {
+  padding: 12px 0px;
+  cursor: pointer
+}
+
+.item {
+  margin: 0px;
+
+}
+
+.item .box {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+
+}
+
+.item .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:  #9084f8be;
+  transition: opacity 0.15s ease-in;
+  opacity: 0;
+  padding-top: 80px;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15)
+}
+
+.item:hover .cover {
+  opacity: 1;
+} 
+.item .cover02 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:  #00fdb5c0;
+  transition: opacity 0.15s ease-in;
+  opacity: 0;
+  padding-top: 80px;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15)
+}
+
+.item:hover .cover02 {
+  opacity: 1;
+} 
+.item .name {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: $verde;
+  font-size: 18px;
+}
+.item .name02 {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: $violetaOscuro;
+  font-size: 18px;
+}
+.item .title {
+  text-transform: capitalize;
+  font-weight: bold;
+  color: $negro;
+  letter-spacing: 2px;
+  font-size: 13px;
+  margin-bottom: 20px
+}
+
+.social {
+  font-size: 18px
+}
+
+.social a {
+  color: inherit;
+  margin: 0 10px;
+  display: inline-block;
+  opacity: 0.7
+}
+
+.social a:hover {
+  opacity: 1
+}
+
+/* CONTACTO */ 
+.parte{
+  background-color: #FAFAFA;
+  height: 8vh;
+  text-align: center;
+  font-weight: 400;
+  padding: 10px;
+  width: 100vw;
+  font-size: 18px;
+  strong{
+    color: $violetaOscuro;
+    font-weight: 400;
+  }
+}
+.contentContact{
+  background-color: $violeta;
+  height: 70vh;
+  padding-top: 25px;
+  .p-2 {
+    padding: .5rem!important;
+    width: 40vw;
+}
+.contentEscribinos{
+  margin-top: -80px;
+}
+  .escribinos{
+    outline: $blanco;
+    font-size: 60px;
+    font-weight: 600;
+    display: inline;
+    -webkit-text-stroke: 1px $blanco;
+    color: transparent; 
+  }
+  .punto{
+    display: inline;
+    color: $verde;
+    font-size: 150px;
+    margin-left: -20px;
+  }
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: $negro;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid $blanco;
+    border-radius: 0.3rem;
+  }
+
+}
+input:focus, input.form-control:focus {
+
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+textarea:focus, textarea.form-control:focus {
+
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+input::placeholder {
+  color:$negro!important;
+ }
+ textarea::placeholder {
+  color:$negro!important;
+ }
+ 
+ ::-webkit-input-placeholder {
+   color: $negro;
+ }
+ ::-moz-placeholder {
+   color: $negro;
+ }
+ :-ms-input-placeholder {
+   color: $negro;
+ }
+ :-moz-placeholder {
+   color: $negro;
+ }
+ button {
+   background-color: $verde;
+   font-size: 20px;
+   font-weight: 600 !important;
+   color: $violeta;
+   border-radius: 1px !important;
+  }
+
+/*FOOTER */
+.footer {
+  background-color: $violetaOscuro;
+  height: 10vh;
+  color: $blanco;
+  padding: 10px 0px 0px 50px;
+  .derechos{
+    
+    .uno{
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .dos{
+      font-size: 10px;
+    }
+  }
+  .mail{
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 8px;
+  }
+  .redes{
+    display: inline;
+    text-align: right;
+
+    a{
+      background-color: $violeta;
+      width: fit-content;
+      padding: 5px;
+      border-radius: 50px;
+      margin-left: 5px;
+
+      img{
+        width: 20px;
+        color: $blanco;
+      }
+    }
+  }
+}
+
+
+
